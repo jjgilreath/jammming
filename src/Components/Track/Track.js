@@ -15,6 +15,10 @@ export class Track extends React.Component
 		)
 	}
 
+	addTrack() {
+			
+	}
+
 	renderAction() {
 				// show + or - based on isRemoval
 	}

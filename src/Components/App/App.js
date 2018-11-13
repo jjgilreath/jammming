@@ -26,12 +26,15 @@ class App extends Component {
 				}
 			]
 		}
+		this.addTrack = this.addTracek.bind(this);
 	}
 	
 	addTrack(track) {
 		if (this.state.playlistTracks.find(trk => trk.id === track.id)) {
 			return;
-		this.state.playlistTracks.push(track);
+		let tracks = this.state.playlistTracks;
+		tracks.push(track);
+		this.setState.({playlistTracks: tracks});
 		}
 	}
 
